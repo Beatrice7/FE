@@ -93,6 +93,17 @@ aside a {
     width: 135px;
     border-radius: 135px;
 }
+.online-resume{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 18px;
+}
+.online-resume img {
+    display: block;
+    margin: 0 auto 5px;
+    width: 150px;
+}
+
 
 h1 {
     font-size: 45px;
