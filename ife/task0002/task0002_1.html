@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>兴趣爱好列表</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>输入你的兴趣爱好</h1>
+		<p>可以使用换行、空格(全角、半角)、逗号(全角、半角)、顿号或分号来分隔</p>
+		<textarea cols="48" rows="8" class="hobbies" placeholder="在此输入兴趣爱好"></textarea>
+		<div class="warn" style.display="none">至少输入1个爱好，最多输入10个爱好</div>
+		<button onclick="showHobby()">提交</button>
+		<button onclick="reset()">重置</button>
+		<div class="show"></div>
+	</div>
+
+	<script src="js/util.js"></script>
+	<script src="js/task0002_1.js"></script>
+</body>
+</html>
