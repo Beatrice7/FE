@@ -1,0 +1,129 @@
+* {
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	/*text-align: center;*/
+}
+
+.container p {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.container textarea {
+	display: block;
+	margin: 10px 0 5px 0;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 20px;
+	border-radius: 5px;
+	border: 2px solid #aaa;
+}
+.container .warn{
+	display: none;
+	padding: 5px;
+	color: #c00;
+}
+.container label{
+	padding-left: 5px;
+}
+
+button {
+	margin: 5px;
+}
+
+
+
+/*task0002——2*/
+#txt {
+	width: 200px;
+	margin: 15px 0;
+}
+
+
+/*task0002——3*/
+.imgRotation{
+	width: 500px;
+	height: 400px;
+	top: 30px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.slides {
+	width: 3000px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.slides img{
+	/*display: block;*/
+	width: 500px;
+	float: left;
+}
+
+.icons{
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -34px;  /*因为本身盒子长度为64px*/
+}
+
+.icons span{ 
+	display: inline-block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.active {
+	background-color: #fff;
+}
+
+/*task0002——4*/
+
+.inputArea{
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.inputArea input{
+	width: 200px;
+	display: block;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

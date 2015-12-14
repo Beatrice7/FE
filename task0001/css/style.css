@@ -1,0 +1,816 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li{
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+body {
+	background-color: #eee;
+}
+
+/*header*/
+header{
+	position: relative;
+	width:100%;
+	height: 80px;
+	background-color: #522a5c;
+}
+
+
+.nav-wrap{
+	position: relative;
+	width: 980px;
+	height: 80px;
+	color: #fff;
+	margin: 0 auto;
+	/*border: 1px solid #fff;*/
+}
+
+.nav-wrap .logo{
+	position: absolute;
+	bottom: 10px;
+}
+
+.nav{
+	font: 14px SimSun, san-serif;
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
+.nav li{
+	float: left;
+	margin-left: 28px; 
+}
+
+.icon-github{
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+}
+/*
+@media (max-width: 980px) {
+	.icon-github{
+		display: none;
+	}
+}*/
+
+/*banner*/
+.banner {
+	background: url("../img/banner-bg.jpg");
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+}
+
+.banner-text-warp{
+	position: relative;
+	width: 980px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.banner-text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100px;
+	width: 350px;
+	padding: 10px 10px 30px 10px;
+	color: #fff;
+	/*background-color: #fff;*/
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.7)), color-stop(75%, rgba(255,255,255,0.5)), color-stop(100%, rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,0) 100%);
+
+}
+.banner-text h2{
+	font-size: 14px;
+	text-align: right;
+	margin-bottom: 12px;
+}
+
+.banner-text p{
+	line-height: 150%;
+	font-size: 12px;
+	text-indent: 2em;
+}
+
+/*content*/
+/*保证三个块的高度一致，将三个块的父元素设置为overflow:hidden;*/
+/*然后对应的每一个块的padding足够大，再用负边距隐藏；*/
+.content {
+	width: 980px;
+	margin: 0 auto;
+	background-color: #eee;	
+	overflow: hidden;
+}
+/*.clearfix:after{
+	content:”.”; display: block; clear: both; height: 0; 
+	overflow: hidden; visibility:hidden}
+.clearfix{zoom:1;}*/
+
+.post{
+	width:320px;
+	background-color: #fff;
+	margin-right: 10px;
+	float: left;
+	padding-bottom: 5000px;
+	margin-bottom: -5000px;
+}
+
+.post img{
+	width: 300px;
+	height: 180px;
+	margin: 10px 10px 15px 10px; 
+}
+
+.post p{
+	font-size: 12px;
+	line-height: 170%;
+	margin:0px 30px 25px;
+	padding: 0; 
+	/*p标签换行问题*/
+	word-wrap: break-word; 
+	word-break: normal;
+}
+.post3{
+	margin-right: 0;
+}
+
+
+/*self-intro*/
+.self-intro{
+	height: 520px;
+	margin-top: 110px;
+	background-color: #fff;
+	text-align: center;/*为啥设置这个连img都对齐了额，不是指针对文本吗*/
+}
+
+.self-intro img{
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	margin: -50px auto 50px;
+	/* 为啥这个方法不能居中呢？因为父元素中没有设置text-align:center */
+	/*margin: -50px auto 50px;*/
+}
+
+.self-intro h2{
+	font: 20px "Century Gothic" #000;
+	margin-bottom: 40px;
+}
+
+.self-intro p{
+	text-align: justify;
+	text-justify:inter-ideograph;/*兼容IE浏览器*/
+	text-indent: 2em;
+	width: 600px;
+	font: 14px #000;
+	line-height: 150%;
+	margin: 0 auto;
+
+}
+
+.footer{
+	background-color: #000;
+	color: #fff;
+}
+
+.footer-nav{
+/*	line-height: 36px;*/
+	border-bottom: 1px solid #444;
+	text-align: center;
+}
+
+.footer-nav li{
+	line-height: 36px;
+	display: inline-block;	
+	margin: 0 14px;
+}
+
+.link{
+	width: 980px;
+	margin: 0 auto; 
+	/*clear: both;*/
+	/*为啥加上下面这句就不会高度塌陷了呢？？？*/
+	overflow: hidden;
+}
+
+.link-item{
+	float: left;
+/*	display: inline-block;*/
+	width: 196px;
+	margin: 0;
+	font-size: 14px;
+}
+
+.link-item h2{
+	font-size: 15px;
+	margin: 50px auto 30px;
+}
+
+.copyright{
+	margin: 60px auto 0;
+	text-align: center;
+}
+
+.copyright p{
+	margin-bottom: 15px;
+}
+
+/*----------------------------------blog----------------------------------*/
+.content-main{
+	width: 980px;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+}
+
+
+.blog-main{
+	width: 710px;
+	float: left;
+}
+.content-main{
+/*	overflow: auto;*/ 
+	/*display: table;*/
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.blog{
+	padding: 20px;
+	margin: 0 0 10px 0;
+	background-color: #fff;
+	position: relative;
+}
+
+.blog h2{
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #a660b7;
+}
+.blog h3{
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 20px;
+}
+.blog p{
+	font-size: 12px;
+	line-height: 1.6;
+	text-indent: 2em;
+	/*word-wrap: break-word;
+	overflow: hidden;*/
+}
+
+.tag{
+	width: 50px;
+	position: absolute;
+	top: 20px;
+	left: -50px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+}
+
+.tag-data{
+	height: 40px;
+	background-color: #522a5c;
+}
+
+.tag-type{
+	height: 40px;
+	background-color: #a660b7;
+}
+
+.author{
+	color: #ccc;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-right: 0;
+	text-align: right;
+}
+
+.pages{
+	width: 710px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.pages a{
+	display: inline-block;
+	background-color: #fff;
+	padding: 10px 15px;
+	margin: 0 5px;
+	font-size: 12px;
+	color: #000;
+}
+
+.jump-page.invalid{
+	color: #ccc;
+}
+.jump-page.current{
+	color: #fff;
+	background-color: #a660b7;
+}
+
+.sidebar{
+	width: 260px;
+	float: right;
+	/*position: relative;*/
+}
+
+.search-wrap{
+	padding: 20px;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+
+.search{
+	width: 220px;
+	border: 1px solid #ddd;
+	/*font-size: 0;*//*因为inline-block之间自动会有一个间隙,
+	但是这样容易对不齐不知道为啥？？后来用了float:right*/
+
+}
+
+.keywords{
+	height: 40px;
+	width: 120px;
+	padding-left: 50px;
+	border: 0;
+	color: #ddd;
+/*	background-image: url(../img/search.png);
+	background-position: left;
+	background-repeat: no-repeat;*/
+	background: url(../img/search.png) no-repeat;
+}
+
+.search:hover{
+	border: 1px solid #333;
+}
+.submit:hover{
+	background-color: #522a5c;
+}
+
+.submit {
+	width: 50px;
+	height: 40px;
+	float: right;
+	border: 0;
+	color: #fff;
+	line-height: 40px;
+	font-size: 18px;
+	background-color: #888;
+}
+
+
+/*----category-------*/
+.category-wrap {
+/*	width: 260px;*/
+	background-color: #fff;
+	/*color: #888;*/
+	margin-bottom: 10px;
+}
+
+.category-tag{
+	color: #888;
+	height: 50px;
+	border: 0;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	border-left: 4px solid #dfc6e6;
+	/*display: block;*/
+	display: list-item;
+	list-style-type: none;
+	line-height: 50px;
+	padding-left: 20px;
+}
+
+.category-tag:hover{
+	border-left-color: #522a5c; 
+	color:#522a5c;
+}
+
+/*------calender--------*/
+.calender-wrap{
+	background-color: #fff;
+}
+.calender{
+	/*margin: 20px;*/
+	padding:20px;
+	background-color: #fff;
+	text-align: center;
+}
+
+
+.calender table{
+	width: 220px;
+	margin: 0 auto;
+	text-align: center;
+	color: #888;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+.calender thead{
+	color: #773c88;
+}
+
+.calender td{
+	width: 30px;
+	line-height: 30px;
+/*	padding: 8px 0;*/
+}
+
+.calender table tbody tr{
+	border-bottom: 1px solid #888;
+
+	/*这句貌似没用padding-bottom: 3px;*/
+}
+/*span默认是内容宽度，不可以设置宽高	*/
+td.today{
+	background-color: #773c88;
+	color: #fff;
+}
+td.festival{
+	color: #b623e0;
+	font-weight: bold;
+}
+
+/*-----------tag-cloud--------*/
+.tags{
+	background-color: #fff;
+	margin-top: 10px;
+	margin-bottom: 500px;
+}
+.tags-title{
+	color: #888;
+	font-size: 15px;
+	padding: 15px;
+}
+
+.tags-name {
+	padding: 0 15px 30px;
+	color: #773c88
+}
+
+.tags-name .lev1{
+	font-size: 38px;
+
+}
+.tags-name .lev2{
+	font-size: 28px;
+}
+.tags-name .lev3{
+	font-size: 18px;
+}
+.tags-name .lev4{
+	font-size: 12px;
+}
+
+
+
+/*-----------------------------gallery---------------------------*/
+.gallery-main{
+	width: 710px;
+	float: left;
+}
+
+.tab-menu{
+	font-size: 0;
+}
+.menu {
+	display: inline-block;
+	padding: 15px 20px 20px 20px;
+	background-color: #fff;
+	color: #000;
+	font-size: 14px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.menu.tab1{
+	border-top: 4px solid #060;
+}
+.menu.tab1:hover {
+	border-top: 4px solid #3c6;
+	border-bottom: none;
+}
+.menu.tab2{
+	border-top: 4px solid #309;
+}
+.menu.tab2:hover {
+	border-top: 4px solid #96f;
+	border-bottom: none;
+}
+.menu.tab3{
+	border-top: 4px solid #600;
+}
+.menu.tab3:hover {
+	border-top: 4px solid #c00;
+	border-bottom: none;
+}
+.menu.tab4 {
+	border-top: 4px solid #960;
+}
+.menu.tab4:hover {
+	border-top: 4px solid #fc3;
+	border-bottom: none;
+}
+.menu.tab5 {
+	border-top: 4px solid #063;
+}
+.menu.tab5:hover {
+	border-top: 4px solid #0c6;
+	border-bottom: none;
+}
+
+/*---------------------------menu-body-----------------*/
+.tab-body{
+	padding: 10px;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+.tab-body .waterfall{
+	width: 330px;
+}
+.tab-body .water-left{
+	float: left;
+}
+.tab-body .water-right{
+	float: right;
+}
+
+.waterfall .card{
+	margin-bottom: 10px;
+}
+.waterfall .card img{
+	width: 160px;
+	/*display: block;*/
+}
+.waterfall .big-card img{
+	width: 330px;
+}
+
+.card-content{
+	padding: 10px;
+	color: #fff;
+}
+
+.card-content .letter{
+	float: left;
+	width:27px;
+	height: 27px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 27px;
+	margin-right: 10px;
+}
+.card-content .info{
+	/*为啥加上这句就对齐了，不在绕着J-letter了呢？*/
+	/*overflow: hidden;*/
+	margin-left: 40px;
+}
+.card-content .info p{
+
+	/*font: 12px/1.7em ;*/
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 1.7;
+}
+
+.card-content[a]{
+	background-color: #77572d;
+}
+.card-content[j]{
+	background-color: #52385b;
+}
+.card-content[f]{
+	background-color: #3b6a44;
+}
+.card-content[u]{
+	background-color: #772d2d;
+}
+
+.columns{
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	column-count:2;
+	column-gap: 10px;
+}
+
+.click-for-more{
+	height: 40px;
+	background-color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.click-for-more img{
+	float: left;
+	margin: 10px 6px 10px 307px;
+}
+
+.click-for-more a{
+	float: left;
+	color: #888;
+	font-size: 12px;
+	line-height: 40px;
+}
+
+/*
+-----------------sidebar-right--------------search&rank
+ */
+.sidebar.gallery{
+	margin-top: 54.5px;
+}
+
+.rank-wrap{
+	background-color: #fff;
+	padding: 20px 15px;
+}
+.rank-wrap h3{
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+.rank-items{
+	font-size: 0px;
+}
+.item{
+	height: 30px;
+}
+
+.item .num{
+	float: left;
+	background-color: #522a5c;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+}
+
+.item .rect-wrap{
+	width: 100px;
+	height: 18px;
+	position: relative;
+	border: 1px solid #522a5c;
+	left: 35px;
+}
+
+.item .rectangle{
+	position: absolute;
+	float: left;
+	height: 18px;
+	background-color: #522a5c;
+}
+.item .name{
+	position: relative;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000;
+	left: 145px;
+	top: -20px;
+}
+
+/*----------------------about---------------------*/
+.about.content-main{
+	/*background-color: #fff;*/
+	width: 980px;
+	margin-top: 100px;
+	position: relative;
+	/*为什么去掉下面这个边框，头像的负边距就会失效呢？？？？*/
+	border:1px solid #fff; 
+	border-bottom: 0; 
+	/*text-align: center;*/
+	margin-bottom: 150px;
+}
+
+.part{
+	width: 487px;
+	height: 1374px;
+	background-color: #fff;
+	position: absolute;
+	z-index: -1;
+}
+.part.right{
+	right: 0;
+}
+
+.about img{
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: 5px solid #eee;
+	border-radius: 50%;
+	margin: 25px auto;
+
+}
+.about img.about-self{
+	/*position: absolute;*/
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 10px solid #eee;
+	bottom : 10px;
+	margin: 0 auto;
+	margin-top: -60px;
+}
+
+.about .name, .contact, .education, .intern{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+/*.about h2{
+	display: inline-block;
+	position: absolute;
+	left: 300px;
+}
+.about .name-right, .contact-right, .education-right{
+	display: inline-block;
+	position: absolute;	
+	width: 300px;
+	left: 550px;
+	line-height: 1.4;
+}
+
+*/
+
+.about h2{
+	/*display: inline-block;*/
+	font-size: 20px;
+	float: left;
+	margin-left: 300px
+}
+.about .name-right, .contact-right, .education-right {
+	/*display: inline-block;*/
+	width: 300px;
+	margin-left: 550px;
+	font-size: 14px;
+	line-height: 1.4;
+}
+.about .contact a{
+	color: #c66;
+}
+
+/*.education p{
+	width: 300px;
+	float: right;
+	font-size: 14px;
+	list-style-type: 1.4;
+}
+*/
+
+.about .year-wrap{
+	position: relative;
+}
+.year-wrap p{
+	font-size: 14px;
+	position: absolute;
+	left: 550px;
+	top: 0;
+	white-space: pre-line;
+	line-height: 1.4;
+}	
+
+.about .year{
+	width: 60px;
+	height: 25px;
+	border: 5px solid #eee;
+	border-radius: 10px;  /*当border-radius足够大的时候里面才会有圆角的形状*/
+	line-height: 25px;
+	font-size: 13px;
+	text-align: center;
+	color: #888; 
+	background-color: #fff;
+	margin: 40px auto;
+}
+
+
+
+
+
+
+
