@@ -440,11 +440,7 @@ function clickListener(event){
 function delegateEvent (element, tag, eventName, listener){
     addEvent(element, eventName, function(e){
         e = e || window.event;
-<<<<<<< HEAD
         var target = e.target || e.srcElement;
-=======
-        var target = e.targer || e.srcElement;
->>>>>>> 1c8757dad86c53086212f8d281d1f44d1acab9bd
         if(target.nodeName.toLowerCase() == tag.toLowerCase()){
             listener.call(target, e)
         }

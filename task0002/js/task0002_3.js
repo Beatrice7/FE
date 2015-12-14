@@ -2,12 +2,13 @@
 var slides = $('.slides'),
 	icons = $('.icons'),
 	iconsArr = $('.icons').getElementsByTagName('span'),
-	timeInterval = 3000, //多久执行一次
+	timeInterval = 2000, //多久执行一次
 	timeOneImg = 200, //执行一次所需时间的
 	intervalOneImg = 20,
 	activeID = 0,
 	nextID = 0,
 	timer = null,
+	timerID = null,
 	imgWidth = $('img').offsetWidth
 	
 // console.log("style.left" + slides.style.left)   //返回字符串，空的

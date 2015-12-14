@@ -5,7 +5,6 @@
 	font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
 }
 
-<<<<<<< HEAD
 ul,ol,li{
 	margin: 0;
 	padding: 0;
@@ -13,8 +12,6 @@ ul,ol,li{
 }
 
 
-=======
->>>>>>> 1c8757dad86c53086212f8d281d1f44d1acab9bd
 .container {
 	width: 1000px;
 	margin: 0 auto;
@@ -109,7 +106,6 @@ button {
 	width: 500px;
 	margin: 0 auto;
 	margin-top: 50px;
-<<<<<<< HEAD
 	font-size: 15px;
 }
 
@@ -213,14 +209,30 @@ button {
 	clear:both;
 }
 
-.inputArea input{
-	width: 200px;
-	display: block;
-	margin-top: 10px;
+/*************************task0002——index.html*********************/
+.task0002-container {
+	width: 980px;
+	margin: 0 auto;
+	font-size: 26px;
+	margin-top: 30px;
+	color: #030;
+/*	border-bottom: 2px dashed #030;*/
 }
 
+.task0002-index {
+	border-top: 2px dashed #030;
+}
 
+.task0002-index a{
+	display: block;
+	color: #360;
+	font-size: 20px;
+	margin: 10px;
+}
 
+.task0002-index a:hover{
+	color: #090;
+}
 
 
 
