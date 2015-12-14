@@ -5,6 +5,7 @@
 	font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
 }
 
+<<<<<<< HEAD
 ul,ol,li{
 	margin: 0;
 	padding: 0;
@@ -12,6 +13,8 @@ ul,ol,li{
 }
 
 
+=======
+>>>>>>> 1c8757dad86c53086212f8d281d1f44d1acab9bd
 .container {
 	width: 1000px;
 	margin: 0 auto;
@@ -106,6 +109,7 @@ button {
 	width: 500px;
 	margin: 0 auto;
 	margin-top: 50px;
+<<<<<<< HEAD
 	font-size: 15px;
 }
 
@@ -208,6 +212,17 @@ button {
 	height: 0;
 	clear:both;
 }
+=======
+}
+
+.inputArea input{
+	width: 200px;
+	display: block;
+	margin-top: 10px;
+}
+
+
+>>>>>>> 1c8757dad86c53086212f8d281d1f44d1acab9bd
 
 
 
