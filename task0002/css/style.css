@@ -1,0 +1,229 @@
+* {
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+}
+
+ul,ol,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	/*text-align: center;*/
+}
+
+.container p {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.container textarea {
+	display: block;
+	margin: 10px 0 5px 0;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 20px;
+	border-radius: 5px;
+	border: 2px solid #aaa;
+}
+.container .warn{
+	display: none;
+	padding: 5px;
+	color: #c00;
+}
+.container label{
+	padding-left: 5px;
+}
+
+button {
+	margin: 5px;
+}
+
+
+
+/*task0002——2*/
+#txt {
+	width: 200px;
+	margin: 15px 0;
+}
+
+
+/*task0002——3*/
+.imgRotation{
+	width: 500px;
+	height: 400px;
+	top: 30px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.slides {
+	width: 3000px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.slides img{
+	/*display: block;*/
+	width: 500px;
+	float: left;
+}
+
+.icons{
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -34px;  /*因为本身盒子长度为64px*/
+}
+
+.icons span{ 
+	display: inline-block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.active {
+	background-color: #fff;
+}
+
+/*task0002——4*/
+
+.inputArea{
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
+	font-size: 15px;
+}
+
+.inputArea input{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	width: 300px;
+	display: block;
+	margin-top: 10px;
+	border: 1px solid #888;
+	padding: 5px 3px;
+	font-size: 15px;
+
+}
+
+.inputArea ul{
+	margin: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+	width: 300px;
+	border: 1px solid #888;
+	border-top: none;
+}
+
+.inputArea li{
+	padding: 2px 5px;
+}
+
+.inputArea li span{
+	color: red;
+}
+
+.inputArea .pointed{
+	background-color: #eee;
+}
+
+/*task0002_5*/
+
+.drag-container {
+	height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.drag-container h1{
+	margin: 20px 0 0 0;
+	line-height: 50px;
+}
+
+.dragwrap{
+	position: relative;
+	margin-top: 10px;
+}
+
+.drag-wrap {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	width: 150px;
+	/*position: relative;*/
+	/*margin-top: 10px;*/
+	height: 450px;
+	background-color: #9c9;
+	float: left;
+	border: 1px solid #f30;
+}
+
+.drag-wrap.right {
+	margin-left: 200px;
+}
+
+.drag {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	width: 150px;
+	height: 40px;
+	/*display: block;*/
+	position: absolute; /*脱离文档流*/
+	background-color: #060;
+	border: 1px solid #33f;
+	/*覆盖边框*/
+	/*margin: -1px; */
+	cursor: move;
+/*	line-height: 40px;
+	text-align: center;*/
+}
+.drag-wrap.left .drag{
+	left: 0;
+}
+
+.drag-wrap.right .drag{
+	left: 350px;  /*为什么写200+150+“px”,右边容器的边框就不能覆盖了呢?????*/
+}
+
+.clearfix:after{
+	display: block;
+	height: 0;
+	clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
