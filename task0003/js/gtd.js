@@ -54,12 +54,12 @@ function initDateBase(){
 			{
 				"id": 0,
 				"name": "默认分类",
-				"child": []
+				"child": [0]
 			},
 			{
 				"id": 1,
 				"name": "百度IEF",
-				"child": [0, 1]
+				"child": []
 			},
 			{				
 				"id": 2,
@@ -71,51 +71,51 @@ function initDateBase(){
 		var childCateJson = [
 			{				
 				"id": 0,
-				"pid": 1,
-				"name": "task0001",
-				"child": [0, 1, 2, 3]
-			},
-			{
-				"id": 1,
-				"pid": 1,
-				"name": "task0002",
+				"pid": 0,
+				"name": "默认子分类",
 				"child": []
-			}
+			},
+			// {
+			// 	"id": 1,
+			// 	"pid": 1,
+			// 	"name": "task0002",
+			// 	"child": []
+			// }
 		];
 		//task列表
 		var taskJson = [
-			{
-				"id": 0,
-				"pid": 0,
-				"finish": true,
-				"name": "task0001",
-				"date": "2015-12-31",
-				"content": "2015书单巴拉巴拉balabala"
-			},
-			{
-				"id": 1,
-				"pid": 0,
-				"finish": false,
-				"name": "task0002",
-				"date": "2015-12-30",
-				"content": "2015书单巴拉巴拉balabala"
-			},
-			{
-				"id": 2,
-				"pid": 0,
-				"finish": true,
-				"name": "task0003",
-				"date": "2015-12-11",
-				"content": "2015书单巴拉巴拉balabala"
-			},
-			{
-				"id": 3,
-				"pid": 0,
-				"finish": true,
-				"name": "task0004",
-				"date": "2015-12-11",
-				"content": "2015书单巴拉巴拉balabala"
-			},
+			// {
+			// 	"id": 0,
+			// 	"pid": 0,
+			// 	"finish": true,
+			// 	"name": "task0001",
+			// 	"date": "2014-12-01",
+			// 	"content": "2015书单巴拉巴拉balabala"
+			// },
+			// {
+			// 	"id": 1,
+			// 	"pid": 0,
+			// 	"finish": false,
+			// 	"name": "task0002",
+			// 	"date": "2014-12-03",
+			// 	"content": "2015书单巴拉巴拉balabala"
+			// },
+			// {
+			// 	"id": 2,
+			// 	"pid": 0,
+			// 	"finish": true,
+			// 	"name": "task0003",
+			// 	"date": "2015-12-11",
+			// 	"content": "2015书单巴拉巴拉balabala"
+			// },
+			// {
+			// 	"id": 3,
+			// 	"pid": 0,
+			// 	"finish": true,
+			// 	"name": "task0004",
+			// 	"date": "2015-12-11",
+			// 	"content": "2015书单巴拉巴拉balabala"
+			// },
 		];
 
 		//database init
@@ -641,7 +641,10 @@ function ok() {
  */
 function clickAddTask() {
 	console.log("clickAddTask")
-
+	if(curChildCateId == -1){
+		alert("请先建立子类！");
+		return;
+	}
 	$(".task-banner").innerHTML = ''
 	+ '<div class="title-name">'
 	+		'<input type="text" class="input-title" placeholder="请输入标题">'
@@ -783,7 +786,7 @@ function clickCate(element) {
 	removeClass($(".all-task"), "active");
 	addClass(element, "active");
 	setDefaultStatus();
-	curChildCateId = -1;
+	curChildCateId = -1; //用于标记当直接点击主分类，没有子类时，提示先建立子类
 	var cateId = parseInt(element.getAttribute("cateid"));
 	// var taskList = $(".status-list");
 	if(cateId == -1){ //点击所有任务
@@ -807,6 +810,8 @@ function clickCate(element) {
  */
 function clickChildCate(element) {
 	cleanAllActives($(".catalog-item"));
+	//点击了all-task 然后直接点击子分类项目时别忘了清除所有任务那项的高亮
+	removeClass($(".all-task"), "active");
 	addClass(element, "active");
 	curChildCateId = parseInt(element.getAttribute("childCateid"));
 	setDefaultStatus();
