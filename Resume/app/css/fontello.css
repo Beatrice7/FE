@@ -55,8 +55,10 @@
 }
  
 .icon-wechat:before { content: '\e800'; } /* '' */
-.icon-qq:before { content: '\e801'; } /* '' */
 .icon-bookmark:before { content: '\e802'; } /* '' */
 .icon-heart:before { content: '\e803'; } /* '' */
 .icon-mail-alt:before { content: '\e805'; } /* '' */
 .icon-phone-1:before { content: '\e80b'; } /* '' */
+.icon-github-squared:before { content: '\e800'; } /* '' */
+.icon-github-circled:before { content: '\e801'; } /* '' */
+.icon-attach:before { content: '\e802'; } /* '' */

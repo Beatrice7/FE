@@ -90,8 +90,8 @@ aside a {
 .title img {
     display: block;
     margin: 0 auto 15px;
-    width: 135px;
-    border-radius: 135px;
+    width: 125px;
+    border-radius: 125px;
 }
 .online-resume{
     margin-top: 100px;
@@ -101,7 +101,7 @@ aside a {
 .online-resume img {
     display: block;
     margin: 0 auto 5px;
-    width: 150px;
+    width: 160px;
 }
 
 
@@ -119,7 +119,7 @@ h2 {
 }
 
 .side-info dt {
-    font-size: 22px;
+    font-size: 25px;
     color: #9f3; /*标签应聘岗位等的颜色*/
     line-height: 40px;
     font-weight: bold;
@@ -178,7 +178,8 @@ h2 {
 .note {
     text-indent: 2em;
     margin-top: 90px;
-    color: #004d40;
+    /*color: #004d40;*/
+    color: #fff;
     font-size: 18px;
 }
 
@@ -200,11 +201,12 @@ h2 {
 }
 
 .main-info dt {
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: bold;
     color: #00796b;
     line-height: 30px;
     /*border-bottom: 1px solid #00796b;*/
-    margin: 0 0 15px -5px;
+    margin: 0px 0 20px -5px;
 }
 
 .main-info dd {
@@ -221,7 +223,7 @@ h2 {
 h3 {
     font-size: 19px;
     color: #004d40;
-    margin: 0 0 15px 5px;
+    margin: 10px 0 5px 0px;
 }
 
 h4 {
@@ -271,8 +273,8 @@ h5 a {
 .exp p {
     font-size: 17px;
     color: #616161;
-    line-height: 23px;
-    margin-bottom: 3px;
+    line-height: 25px;
+    margin-bottom: 5px;
 }
 
 .exp > li {
