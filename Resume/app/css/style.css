@@ -187,7 +187,7 @@ h2 {
     position: relative;
     left: 300px;
     width: 720px;
-    padding: 15px 20px 10000px;
+    padding: 0px 20px 10000px;
     /*background: #f0f2f1;*/
     margin-bottom: -10000px;
 }
@@ -206,7 +206,7 @@ h2 {
     color: #00796b;
     line-height: 30px;
     /*border-bottom: 1px solid #00796b;*/
-    margin: 0px 0 20px -5px;
+    margin: 0px 0 10px -5px;
 }
 
 .main-info dd {
@@ -280,7 +280,7 @@ h5 a {
 .exp > li {
     position: relative;
     top: -5px;
-    margin: 0 0 20px 20px;
+    margin: 0 0 10px 20px;
 }
 
 .exp img {
@@ -288,7 +288,7 @@ h5 a {
 }
 
 .exp ul > li {
-    margin: 0 0 12px 0;
+    margin: 0 0 5px 0;
 }
 
 .efe .task4img img {
