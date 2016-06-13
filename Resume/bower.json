@@ -1,0 +1,7 @@
+{
+  "name": "resume-back",
+  "private": true,
+  "dependencies": {
+    "components-font-awesome": "~4.4.0"
+  }
+}
