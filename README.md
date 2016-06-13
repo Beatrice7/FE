@@ -7,6 +7,7 @@
 [task0003](http://qiruotong.me/FE/task0003/index.html)
 
 ## LowPoly
-主要用到Three.js 后续打算写一个Voronoi生成器，其实跟Delaunay原理差不多啦~
-[LowPoly](http://qiruotong.me/FE/webGL/LowPoly/lowpoly.html)
+主要用到Three.js, 后续打算写一个Voronoi生成器，其实跟Delaunay原理差不多啦~  
+
+[LowPoly](http://qiruotong.me/FE/webGL/lowpoly/lowpoly.html)
 
